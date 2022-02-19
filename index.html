@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+  <main>
+    <h1 class="hide-visually">Stats preview card component</h1>
+
+    <div class="stats-card">
+      <div class="card-header">
+        <!-- <div> -->
+        <picture>
+          <source media="(max-width: 30.0625em)" srcset="images/image-header-mobile.jpg">
+          <source media="(min-width: 48.0625em)" srcset="images/image-header-desktop.jpg">
+          <img src="images/image-header-mobile.jpg" alt="People working on their computer in an office">
+        </picture>
+        <!-- </div> -->
+      </div>
+
+      <div class="card-body">
+        <h2>Get <span>insights</span> that help your business grow.</h2>
+        <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience,
+          and overall efficiency.</p>
+        <div class="stats-wrapper">
+          <div class="stat"><span>10k+</span><br><span>companies</span></div>
+          <div class="stat"><span>314</span><br><span>templates</span></div>
+          <div class="stat"><span>12m+</span><br><span>queries</span></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://twitter.com/ShameerKamalud1">Shameer Kamaludeen</a>.
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+/* || General style rules */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.vertically-center {
+    display: flex;
+    align-items: center;
+}
+
+/* This as the class implies hide the lement visually */
+.hide-visually {
+    font-size: 0;
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute!important;
+    border: 0!important;
+    padding: 0!important;
+    margin: 0!important;
+    clip: rect(1px,1px,1px,1px);
+}
+
+/* || Typography */
+
+body {
+    letter-spacing: 0.2px;
+    font-size: 10px;
+    line-height: 1.5;
+    word-spacing: 0.8px;
+}
+
+/* || Layout */
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    flex: 0;
+}
+
+/* || Section Stats card */
+
+.stats-card {
+    border-radius: 10px;
+    background-color: hsl(244, 38%, 16%);
+    margin: 8.5em 0;
+    max-width: 88%;
+}
+
+.stats-card .card-header {
+    background-color: hsl(277, 64%, 61%);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.stats-card .card-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    opacity: 80%;
+    display: block;
+}
+
+.stats-card .card-body {
+    width: 82%;
+    margin: 0 auto;
+}
+
+.stats-card h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+}
+
+.stats-card h2 > span {
+    color: hsl(277, 64%, 61%);
+}
+
+
+.stats-card p {
+    font-size: 0.94rem;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.stats-card .stats-wrapper {
+    margin-top: 4em;
+}
+
+.stats-card .stat {
+    text-align: center;
+    margin: 3em 0;
+}
+
+.stats-card .stat span {
+    font-family: 'Inter', sans-serif;
+}
+
+.stats-card .stat span:first-child {
+    font-size: 1.4rem;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.stats-card .stat span:last-child {
+    font-size: 0.75rem;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* || Footer */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.6);
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  /* || Media query for ipads/tablets breakpoint */
+
+@media screen and (min-width: 30.0625em) {
+
+    /* || Section Star card */
+
+    .stats-card .stats-wrapper {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2em;
+    }
+
+    .stats-card .stat {
+        text-align: left;
+        margin-right: 5em;
+    }
+    
+}
+
+/* || Media query for small screens/laptops breakpoint */
+
+@media screen and (min-width: 48.0625em) {
+
+    /* || Section Star card */
+
+    .stats-card {
+        display: flex;
+        max-width: 85%;
+    }
+
+    .stats-card .stats-wrapper {
+        justify-content: initial;
+    }
+
+    .stats-card .card-header {
+        flex: 1;
+        order: 2;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 15px;
+    }
+
+    .stats-card .card-body {
+        flex: 1;
+        order: 1;
+        margin: 0 5%;
+        align-self: center;
+    }
+
+    .stats-card p, 
+    .stats-card h2 {
+        text-align: left;
+    }
+}
