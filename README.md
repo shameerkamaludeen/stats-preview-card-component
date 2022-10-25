@@ -55,7 +55,6 @@ In this challenge tried a fully responsive card instead of fixed-width which was
 
 - Github - [Shameer Kamaludeen](https://github.com/shameerkamaludeen)
 - Frontend Mentor - [@shameerkamaludeen](https://www.frontendmentor.io/profile/shameerkamaludeen)
-- Twitter - [@ShameerKamalud1](https://twitter.com/ShameerKamalud1)
 
 ## Acknowledgments
 
